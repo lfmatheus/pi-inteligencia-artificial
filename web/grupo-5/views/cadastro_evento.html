@@ -57,7 +57,7 @@ body {
 <body>
   <!-- Cabeçalho -->
   <header class="event-header">
-    <a href="./index-05.html"><img src="./img/logo-05.png" alt="Logo"></a>
+    <a href="./index.html"><img src="./img/logo-05.png" alt="Logo"></a>
 </header>
 
   <!-- Conteúdo Principal -->
@@ -108,7 +108,7 @@ body {
                       <input type="text" class="form-control" id="complemento" placeholder="Complemento">
                   </div>
               </div>
-          
+            
               <div class="mb-3">
                   <label for="categoria" class="form-label">Categoria</label>
                   <select class="form-select" id="categoria" required>
@@ -117,11 +117,11 @@ body {
                       <option value="bazar">Bazar</option>
                       <option value="Esportes">Esportes</option>
                       <option value="Jogos">Jogos</option>
-                      <option value="Exposicao">Exposições Artisticas</option>
+                      <option value="Exposicao">Exposições Artísticas</option>
                       <option value="Pets">Pets</option>
                   </select>
               </div>
-          
+            
               <!-- Quantidade de ingressos -->
               <div class="mb-3">
                   <label for="qtd-ingresso" class="form-label">Quantidade de ingressos</label>
@@ -132,18 +132,23 @@ body {
                   <label for="banner" class="form-label">URL do banner</label>
                   <input type="url" class="form-control" id="banner" placeholder="Ex.: https://example.com/banner.jpg" required>
               </div>
-          
+            
               <!-- Descrição -->
               <div class="mb-3">
                   <label for="descricao" class="form-label">Descrição</label>
                   <textarea class="form-control" id="descricao" rows="4" placeholder="Escreva a descrição do evento"></textarea>
               </div>
-              
-              <!-- Botão de cadastro -->
-              <div class="text-center">
-                  <button type="submit" class="btn btn-teal w-100">Cadastrar</button>
+            
+              <!-- Botões -->
+              <div class="row">
+                  <div class="col-6">
+                      <button type="button" id="btnGerarDescricao" class="btn btn-warning w-100">Gerar Descrição</button>
+                  </div>
+                  <div class="col-6">
+                      <button type="submit" class="btn btn-teal w-100">Cadastrar</button>
+                  </div>
               </div>
-          </form>
+          </form>          
           
           </div>
         </div>

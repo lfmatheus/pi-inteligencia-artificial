@@ -3,7 +3,7 @@ async function loginUser(event) {
 
     // URL do endpoint para login
     const loginEndpoint = '/login';
-    const URLCompleta = `http://localhost:3000${loginEndpoint}`;
+    const URLCompleta = `http://localhost:3005${loginEndpoint}`;
 
     // Captura os valores dos campos de email e senha
     let emailInput = document.querySelector('#email');
@@ -26,7 +26,7 @@ async function loginUser(event) {
 
             // Redireciona para a página principal após login
             setTimeout(() => {
-                window.location.href = 'index-05.html';
+                window.location.href = 'index.html';
             }, 2000);
 
         } catch (error) {

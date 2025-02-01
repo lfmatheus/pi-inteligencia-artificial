@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const categoriaSelecionada = localStorage.getItem('categoriaSelecionada');
     if (!categoriaSelecionada) {
         alert('Nenhuma categoria selecionada.');
-        window.location.href = 'index-05.html';
+        window.location.href = 'index.html';
         return;
     }
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     eventosContainer.parentElement.prepend(tituloCategoria);
 
     const eventosEndpoint = `/eventosCat?categoria=${encodeURIComponent(categoriaSelecionada)}`;
-    const URLCompleta = `http://localhost:3000${eventosEndpoint}`;
+    const URLCompleta = `http://localhost:3005${eventosEndpoint}`;
 
     try {
         const resposta = await axios.get(URLCompleta);
